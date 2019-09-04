@@ -398,9 +398,9 @@ def edit_profile(request, profile_id):
 			else:
 				active = 0
 			obj_profile = Profile.objects.get(pk = int(profile_id))
-			obj_profile.channel_id =channel
+			obj_profile.channel =channel
 			obj_profile.ip = ip
-			obj_profile.profile = profile
+			obj_profile.type = profile
 			obj_profile.protocol = protocol
 			obj_profile.descr = descr
 			obj_profile.monitor = monitor
